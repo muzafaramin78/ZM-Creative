@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZM Creative | Premium Digital Marketing Agency by Muzafar Amin</title>
+    <meta name="description" content="ZM Creative helps businesses grow through high-converting websites, SEO, paid advertising, branding, and creative digital experiences.">
+    <meta name="keywords" content="Digital Marketing, Web Design, SEO, Shopify, WordPress, Branding, Muzafar Amin, ZM Creative">
+    <meta property="og:title" content="ZM Creative | Premium Digital Marketing Agency">
+    <meta property="og:description" content="Creative Ideas. Digital Results. Helping businesses grow globally.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Luxury Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">ZM <span>Creative</span></div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-blobs"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+        <canvas id="particleCanvas"></canvas>
+        <div class="bg-grid"></div>
+        <div class="noise-overlay"></div>
+        <div class="mouse-glow" id="mouseGlow"></div>
+    </div>
+
+    <!-- Live Visitor Counter -->
+    <div class="live-counter glass" data-aos="fade-down">
+        <span class="live-dot"></span>
+        <span id="visitorCount">142</span> People viewing
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">ZM <span>Creative</span></a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+                <a href="#contact" class="btn btn-gold nav-cta magnetic">Get Started</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-right">
+                    <span class="hero-badge"><i class="fas fa-star"></i> Premium Digital Agency</span>
+                    <h1 class="hero-title">Creative Ideas. <br><span class="gradient-text">Digital Results.</span></h1>
+                    <h2 class="typing-container">We help businesses grow with <span class="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="hero-desc">High-converting websites, SEO, paid advertising, branding, and creative digital experiences tailored for your success.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-gold magnetic">Get Free Consultation <i class="fas fa-arrow-right"></i></a>
+                        <a href="#portfolio" class="btn btn-outline magnetic">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="hero-img-wrapper glass">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Team" loading="lazy">
+                        <div class="floating-card fc-1 glass"><i class="fas fa-chart-line"></i> 95% Growth</div>
+                        <div class="floating-card fc-2 glass"><i class="fas fa-rocket"></i> Fast Delivery</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container stats-container glass" data-aos="fade-up">
+                <div class="stat-item"><h3 class="counter" data-target="3">0</h3><span>+</span><p>Years Exp</p></div>
+                <div class="stat-item"><h3 class="counter" data-target="100">0</h3><span>+</span><p>Projects</p></div>
+                <div class="stat-item"><h3 class="counter" data-target="50">0</h3><span>+</span><p>Clients</p></div>
+                <div class="stat-item"><h3 class="counter" data-target="95">0</h3><span>%</span><p>Satisfaction</p></div>
+            </div>
+            <div class="svg-divider"><svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="var(--bg-alt)"></path></svg></div>
+        </section>
+
+        <!-- 2. PARTNER LOGOS CAROUSEL -->
+        <section class="logos-section">
+            <div class="logos-track">
+                <div class="logo-item"><i class="fab fa-google"></i></div>
+                <div class="logo-item"><i class="fab fa-shopify"></i></div>
+                <div class="logo-item"><i class="fab fa-wordpress"></i></div>
+                <div class="logo-item"><i class="fab fa-meta"></i></div>
+                <div class="logo-item"><i class="fab fa-hubspot"></i></div>
+                <div class="logo-item"><i class="fab fa-mailchimp"></i></div>
+                <div class="logo-item"><i class="fab fa-aws"></i></div>
+                <div class="logo-item"><i class="fab fa-stripe"></i></div>
+                <!-- Duplicated for seamless loop -->
+                <div class="logo-item"><i class="fab fa-google"></i></div>
+                <div class="logo-item"><i class="fab fa-shopify"></i></div>
+                <div class="logo-item"><i class="fab fa-wordpress"></i></div>
+                <div class="logo-item"><i class="fab fa-meta"></i></div>
+                <div class="logo-item"><i class="fab fa-hubspot"></i></div>
+                <div class="logo-item"><i class="fab fa-mailchimp"></i></div>
+                <div class="logo-item"><i class="fab fa-aws"></i></div>
+                <div class="logo-item"><i class="fab fa-stripe"></i></div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT & TIMELINE -->
+        <section id="about" class="section bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up"><span class="subtitle">About Us</span><h2 class="title">Meet the <span class="gradient-text">Founder</span></h2></div>
+                <div class="about-grid">
+                    <div class="about-img glass" data-aos="fade-right">
+                        <img src="images\jh.jpeg" alt="Muzafar Amin" loading="lazy">
+                    </div>
+                    <div class="about-content" data-aos="fade-left">
+                        <h3>Muzafar Amin</h3>
+                        <p class="role">Founder & Digital Marketing Specialist</p>
+                        <p>With over 3 years of dedicated experience, I lead ZM Creative with a passion for transforming businesses through innovative digital solutions. As a certified Web Designer, Shopify Expert, WordPress Developer, and SEO Specialist, I bridge the gap between stunning design and measurable digital growth.</p>
+                        <div class="about-tags"><span>Web Design</span><span>Shopify</span><span>WordPress</span><span>SEO</span><span>Branding</span></div>
+                      <a href="images\Gemini_Generated_Image_mn0xo2mn0xo2mn0x.jpg" class="btn btn-gold magnetic" download="images\Gemini_Generated_Image_mn0xo2mn0xo2mn0x.jpg">
+    <i class="fas fa-download"></i> 
+    Download Profile
+</a>
+                    </div>
+                </div>
+                
+                <!-- Achievements Timeline -->
+                <div class="timeline" data-aos="fade-up">
+                    <div class="t-header"><h3>Our <span class="gradient-text">Journey</span></h3></div>
+                    <div class="timeline-item left glass"><div class="t-date">2026</div><h4>Global Expansion</h4><p>Serving clients in over 20 countries worldwide.</p></div>
+                    <div class="timeline-item right glass"><div class="t-date">2024</div><h4>100+ Projects Milestone</h4><p>Successfully delivered over 100 high-converting digital projects.</p></div>
+                    <div class="timeline-item left glass"><div class="t-date">2023</div><h4>Agency Launch</h4><p>ZM Creative was founded by Muzafar Amin in Pakistan.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICES -->
+        <section id="services" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up"><span class="subtitle">What We Do</span><h2 class="title">Our Premium <span class="gradient-text">Services</span></h2></div>
+                <div class="services-grid">
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fas fa-laptop-code"></i></div><h4>Website Design</h4><p>Custom, responsive UI/UX.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fab fa-wordpress"></i></div><h4>WordPress</h4><p>Custom themes & plugins.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fab fa-shopify"></i></div><h4>Shopify</h4><p>High-converting stores.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fas fa-search"></i></div><h4>SEO</h4><p>Rank higher on Google.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fab fa-google"></i></div><h4>Google Ads</h4><p>Targeted PPC campaigns.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fas fa-palette"></i></div><h4>Branding</h4><p>Memorable brand identity.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fas fa-robot"></i></div><h4>AI Automation</h4><p>Smart business workflows.</p></div>
+                    <div class="service-card glass tilt" data-aos="zoom-in"><div class="s-icon"><i class="fas fa-share-alt"></i></div><h4>Social Media</h4><p>Engaging content strategy.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PORTFOLIO & CASE STUDIES -->
+        <section id="portfolio" class="section bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up"><span class="subtitle">Our Work</span><h2 class="title">Featured <span class="gradient-text">Portfolio</span></h2></div>
+                <div class="portfolio-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="shopify">Shopify</button>
+                    <button class="filter-btn" data-filter="brand">Branding</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item glass tilt" data-cat="web" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Project"><div class="p-overlay"><h4>Corporate Site</h4><p>Web Design</p></div></div>
+                    <div class="portfolio-item glass tilt" data-cat="shopify" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Project"><div class="p-overlay"><h4>Fashion Store</h4><p>Shopify</p></div></div>
+                    <div class="portfolio-item glass tilt" data-cat="brand" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=600&q=80" alt="Project"><div class="p-overlay"><h4>Tech Branding</h4><p>Branding</p></div></div>
+                    <div class="portfolio-item glass tilt" data-cat="web" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=600&q=80" alt="Project"><div class="p-overlay"><h4>Agency Landing</h4><p>Web Design</p></div></div>
+                </div>
+
+                <!-- Case Studies -->
+                <div class="case-studies" data-aos="fade-up">
+                    <h3 class="cs-title">Premium <span class="gradient-text">Case Studies</span></h3>
+                    <div class="cs-grid">
+                        <div class="cs-card glass">
+                            <div class="cs-header"><h4>TechCorp Rebrand</h4><span class="cs-tag">Branding</span></div>
+                            <div class="cs-stats"><div><h5>+250%</h5><p>Web Traffic</p></div><div><h5>+120%</h5><p>Lead Gen</p></div></div>
+                            <p>"ZM Creative completely transformed our digital presence. The results speak for themselves."</p>
+                        </div>
+                        <div class="cs-card glass">
+                            <div class="cs-header"><h4>Boutique Shopify Store</h4><span class="cs-tag">E-commerce</span></div>
+                            <div class="cs-stats"><div><h5>$50k</h5><p>First Month</p></div><div><h5>4.5x</h5><p>ROI on Ads</p></div></div>
+                            <p>"Our Shopify store looks premium and converts incredibly well. Highly recommended!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. BLOG -->
+        <section id="blog" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up"><span class="subtitle">Insights</span><h2 class="title">Latest <span class="gradient-text">Articles</span></h2></div>
+                <div class="blog-grid">
+                    <article class="blog-card glass tilt" data-aos="fade-up">
+                        <div class="blog-img"><img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Blog" loading="lazy"></div>
+                        <div class="blog-content"><span class="blog-cat">SEO</span><h4>10 SEO Trends to Dominate in 2026</h4><p>Discover the latest search engine optimization strategies...</p><a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                    </article>
+                    <article class="blog-card glass tilt" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-img"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Blog" loading="lazy"></div>
+                        <div class="blog-content"><span class="blog-cat">Shopify</span><h4>How to Scale Your Shopify Store</h4><p>Expert tips on increasing conversions and scaling...</p><a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                    </article>
+                    <article class="blog-card glass tilt" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-img"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="Blog" loading="lazy"></div>
+                        <div class="blog-content"><span class="blog-cat">AI</span><h4>AI Automation in Marketing</h4><p>How artificial intelligence is revolutionizing digital...</p><a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up"><span class="subtitle">Get In Touch</span><h2 class="title">Let's Start a <span class="gradient-text">Project</span></h2></div>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="c-card glass"><i class="fas fa-user"></i><div><h5>Muzafar Amin</h5><p>Founder & CEO</p></div></div>
+                        <div class="c-card glass"><i class="fas fa-envelope"></i><div><h5>Email</h5><p>muzafaramin2@gmail.com</p></div></div>
+                        <div class="c-card glass"><i class="fab fa-whatsapp"></i><div><h5>WhatsApp</h5><p>+92 328 9720331</p></div></div>
+                        <div class="c-card glass"><i class="fas fa-map-marker-alt"></i><div><h5>Location</h5><p>Pakistan (Worldwide Service)</p></div></div>
+                    </div>
+                    <form class="contact-form glass" id="contactForm" data-aos="fade-left">
+                        <div class="form-group"><input type="text" id="cName" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="email" id="cEmail" placeholder="Your Email" required></div>
+                        <div class="form-group"><input type="tel" id="cPhone" placeholder="Phone Number"></div>
+                        <div class="form-group"><textarea id="cMsg" placeholder="Your Message" rows="5" required></textarea></div>
+                        <button type="submit" class="btn btn-gold w-100 magnetic">Send via WhatsApp <i class="fab fa-whatsapp"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="f-brand"><a href="#home" class="logo">ZM <span>Creative</span></a><p>Creative Ideas. Digital Results.</p>
+                    <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+                <div class="f-links"><h5>Quick Links</h5><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li></ul></div>
+                <div class="f-news"><h5>Newsletter</h5><p>Get digital marketing tips.</p><form class="news-form"><input type="email" placeholder="Your email"><button type="submit"><i class="fas fa-arrow-right"></i></button></form></div>
+            </div>
+            <div class="f-bottom"><p>&copy; 2026 ZM Creative. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="https://wa.me/923289720331" class="f-btn wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+923289720331" class="f-btn call"><i class="fas fa-phone"></i></a>
+        <a href="mailto:muzafaramin2@gmail.com" class="f-btn mail"><i class="fas fa-envelope"></i></a>
+        <button class="f-btn top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+    <!-- AI Chat UI -->
+    <div class="chat-window glass" id="chatWindow">
+        <div class="chat-header"><h5>ZM Assistant</h5><button id="chatClose"><i class="fas fa-times"></i></button></div>
+        <div class="chat-body">
+            <div class="msg bot">Hello! 👋 How can I help you grow your business today?</div>
+            <div class="quick-replies">
+                <button class="qr-btn">Pricing</button>
+                <button class="qr-btn">Services</button>
+                <button class="qr-btn">Contact</button>
+            </div>
+        </div>
+        <div class="chat-input"><input type="text" placeholder="Type a message..."><button><i class="fas fa-paper-plane"></i></button></div>
+    </div>
+    <button class="chat-toggle glass" id="chatToggle"><i class="fas fa-comments"></i></button>
+
+    <!-- Newsletter Popup -->
+    <div class="newsletter-overlay" id="newsletterOverlay">
+        <div class="newsletter-popup glass">
+            <button class="popup-close" id="popupClose"><i class="fas fa-times"></i></button>
+            <div class="popup-icon"><i class="fas fa-gift"></i></div>
+            <h3>Get a Free SEO Audit!</h3>
+            <p>Subscribe to our newsletter and get a comprehensive SEO report for your website.</p>
+            <form class="popup-form"><input type="email" placeholder="Enter your email" required><button type="submit" class="btn btn-gold">Claim Now</button></form>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div class="cookie glass" id="cookie">
+        <p><i class="fas fa-cookie-bite"></i> We use cookies to enhance your experience.</p>
+        <button id="cookieAccept" class="btn btn-gold btn-sm">Accept</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
